@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:learn/app/design/design3.dart';
 import 'app/design/design2.dart';
 import 'package:learn/app/design/design1.dart';
 
@@ -12,12 +13,12 @@ class learn extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Design1',
+      title: 'Design',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.red,
       ),
-      home: design1(),
+      home: design3(),
     );
   }
 }
