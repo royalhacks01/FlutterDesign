@@ -92,11 +92,33 @@ class design3 extends StatelessWidget {
                 ),
               ),
               Padding(
-                padding: EdgeInsets.symmetric(horizontal: 20),
+                padding: EdgeInsets.only(top: 30, bottom: 30, right: 20, left: 20),
                 child: Divider(
                   thickness: 1.0,
                 ),
-              )
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  Padding(
+                    padding: const EdgeInsets.only(top: 20),
+                    child: Text("Don't Have An Account?",
+                      style: TextStyle(
+                        fontSize: 20,
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.only(top: 20, left: 10),
+                    child: Text("Register Now",
+                      style: TextStyle(
+                        fontSize: 20,
+                        color: Colors.blue,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
             ],
         ),
       ),
