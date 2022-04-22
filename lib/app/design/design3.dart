@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class design3 extends StatelessWidget {
@@ -19,17 +20,18 @@ class design3 extends StatelessWidget {
         height: screenHeight,
         child: Column(
             children: <Widget>[
-              Text('Login',
+              Text('LOGIN',
                 textAlign: TextAlign.center,
                 style: TextStyle(
                     height: 5,
-                    fontSize: 60,
+                    fontSize: 50,
                   fontWeight: FontWeight.bold,
+                  color: Colors.blue,
                 ),
               ),
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: 20.0),
-                child: SizedBox( height: 60,
+                child: SizedBox( height: 60, width: 500,
                   child: TextField(
                     maxLines: null,
                     expands: true,
@@ -43,7 +45,7 @@ class design3 extends StatelessWidget {
               ),
               Padding(
                 padding: EdgeInsets.only(top: 20, right: 20, left: 20),
-                child: SizedBox( height: 60,
+                child: SizedBox( height: 60, width: 500,
                   child: TextField(
                     maxLines: null,
                     expands: true,
@@ -51,10 +53,50 @@ class design3 extends StatelessWidget {
                       prefixIcon: Icon(Icons.lock),
                       border: OutlineInputBorder(),
                       hintText: 'Password',
+                      suffixIcon: Icon(Icons.remove_red_eye),
                     ),
                   ),
                 ),
               ),
+              Container(
+                width: 500,
+                child: Align(
+                  alignment: Alignment.centerRight,
+                  child: Padding(
+                    padding: EdgeInsets.only(top: 8.0, right: 20,),
+                    child: Text('Forget Password ?',
+                    textAlign: TextAlign.right,
+                    ),
+                  ),
+                ),
+              ),
+              Padding(
+                padding: EdgeInsets.only(top: 20,bottom: 20),
+                child: SizedBox(
+                  height: 60,
+                  width: 250,
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                        primary: Colors.blue,
+                        elevation: 3,
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(30)
+                        ),
+                    ),
+                    onPressed: () {},
+                    child: Text('Login',
+                    style: TextStyle(
+                      fontSize: 20,
+                    ),),
+                  ),
+                ),
+              ),
+              Padding(
+                padding: EdgeInsets.symmetric(horizontal: 20),
+                child: Divider(
+                  thickness: 1.0,
+                ),
+              )
             ],
         ),
       ),
