@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:learn/app/design/design3.dart';
-import 'app/design/design2.dart';
-import 'package:learn/app/design/design1.dart';
+import 'package:learn/App/Design/design3.dart';
+import 'package:learn/App/Design/design4.dart';
+import 'App/Design/design2.dart';
+import 'package:learn/App/Design/design1.dart';
 
 void main(){
   runApp(learn());
@@ -18,7 +19,7 @@ class learn extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.red,
       ),
-      home: design3(),
+      home: design4(),
     );
   }
 }
