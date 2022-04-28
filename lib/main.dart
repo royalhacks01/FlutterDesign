@@ -17,7 +17,7 @@ class learn extends StatelessWidget {
       title: 'Design',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.red,
+        primaryColor: Colors.lightBlue[800],
       ),
       home: design4(),
     );

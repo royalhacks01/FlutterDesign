@@ -26,9 +26,12 @@ class design4 extends StatelessWidget {
                           MediaQuery.of(context).size.width, 120.0)),
           image: DecorationImage(
             fit: BoxFit.cover,
-            image: NetworkImage(
+            image: AssetImage(
+              "assets/Image/header.jpg",
+            ),
+            /*NetworkImage(
                 "https://images.unsplash.com/photo-1579202673506-ca3ce28943ef"
-               ),
+               ),*/
               ),
              ),
             ),
@@ -96,8 +99,9 @@ class design4 extends StatelessWidget {
            ),
           Container(
                     child: Padding(
-                      padding: EdgeInsets.only(top: 40, left: 40, right: 20,),
+                      padding: EdgeInsets.only(top: 40, left: 40, right: 42,),
                       child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           SizedBox(
                             width: 200,
@@ -111,25 +115,79 @@ class design4 extends StatelessWidget {
                                 fontWeight: FontWeight.bold,
                               ),),
                             ),
-                          ),
-                          ElevatedButton(
-                            style: ElevatedButton.styleFrom(
-                              primary: Colors.blue,
-                              elevation: 3,
-                              shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.horizontal(right: Radius.elliptical(5, 5), left: Radius.elliptical(5, 5))
+                          ), //Radio Button
+                          SizedBox( // SignIn Button
+                            height: 60,
+                            width: 200,
+                            child: ElevatedButton(
+                              style: ElevatedButton.styleFrom(
+                                primary: Colors.blue,
+                                elevation: 3,
+                                shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.horizontal(right: Radius.elliptical(5, 5), left: Radius.elliptical(5, 5))
+                                ),
+                              ),
+                              onPressed: () { print('SignIn Successful');},
+                              child: Text('Sign In',
+                                style: TextStyle(
+                                  fontSize: 20,
+                                ),
                               ),
                             ),
-                            onPressed: () { print('SignIn Successful');},
-                            child: Text('Sign In',
-                              style: TextStyle(
-                                fontSize: 20,
-                              ),),
-                          ),
+                          ), //SignIN Button
                         ],
                       ),
                     ),
             ),
+          Container(
+            width: screenWidth,
+              padding: EdgeInsets.symmetric(horizontal: 50,vertical: 50),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: [
+                  SizedBox(
+                    width: screenWidth / 6,
+                    child: Divider(
+                      thickness: 1.0,
+                    ),
+                  ),
+                  SizedBox(
+                    width: screenWidth / 3,
+                    child: Text('Social Login',
+                    textAlign: TextAlign.center,
+                    style: TextStyle(
+                      fontSize: 20,
+                    ),
+                    ),
+                  ),
+                  SizedBox(
+                    width: screenWidth / 6,
+                    child: Divider(
+                      thickness: 1.0,
+                    ),
+                  )
+                ],
+              ),
+            ),
+          Container(
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Padding(
+                  padding: EdgeInsets.all(8.0),
+                  child: CircleAvatar(
+                    backgroundImage: AssetImage('assets/Icon/F.png'),
+                      radius: 25,
+                  ),
+                ),
+                CircleAvatar(
+                  backgroundImage: AssetImage('assets/Icon/I.png'),
+                  radius: 25,
+                ),
+              ],
+            ),
+          ),
           ],
         ),
       ),
