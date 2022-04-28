@@ -109,9 +109,9 @@ class design4 extends StatelessWidget {
                               value: 1,
                               groupValue: selectOption,
                               onChanged: (value){},
-                              title: Text("Flutter",
+                              title: Text("Remember Me",
                               style: TextStyle(
-                                fontSize: 18,
+                                fontSize: 15,
                                 fontWeight: FontWeight.bold,
                               ),),
                             ),
