@@ -103,7 +103,7 @@ class design3 extends StatelessWidget {
                     padding: const EdgeInsets.only(top: 20),
                     child: Text("Don't Have An Account?",
                       style: TextStyle(
-                        fontSize: 20,
+                        fontSize: 15,
                       ),
                     ),
                   ),
@@ -111,7 +111,7 @@ class design3 extends StatelessWidget {
                     padding: const EdgeInsets.only(top: 20, left: 10),
                     child: Text("Register Now",
                       style: TextStyle(
-                        fontSize: 20,
+                        fontSize: 15,
                         color: Colors.blue,
                       ),
                     ),

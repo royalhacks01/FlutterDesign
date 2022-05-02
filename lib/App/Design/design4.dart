@@ -60,7 +60,7 @@ class design4 extends StatelessWidget {
                   ),
                   Padding(
                     padding: const EdgeInsets.only(top: 10, left: 20),
-                    child: Text('UserName',
+                    child: Text('User Name',
                         style: TextStyle(
                           fontSize: 18,
                         ),
@@ -71,7 +71,7 @@ class design4 extends StatelessWidget {
                     child: TextField(
                       decoration: InputDecoration(
                         border: UnderlineInputBorder(),
-                        hintText: 'eg: chromicle',
+                        hintText: 'eg: RoyalHacks01',
                       ),
                     ),
                   ),
@@ -99,12 +99,12 @@ class design4 extends StatelessWidget {
            ),
           Container(
                     child: Padding(
-                      padding: EdgeInsets.only(top: 40, left: 40, right: 42,),
+                      padding: EdgeInsets.only(top: 40, left: 10, right: 42,),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           SizedBox(
-                            width: 200,
+                            width: 170,
                             child: RadioListTile(
                               value: 1,
                               groupValue: selectOption,
@@ -118,7 +118,7 @@ class design4 extends StatelessWidget {
                           ), //Radio Button
                           SizedBox( // SignIn Button
                             height: 60,
-                            width: 200,
+                            width: 100,
                             child: ElevatedButton(
                               style: ElevatedButton.styleFrom(
                                 primary: Colors.blue,
@@ -134,14 +134,14 @@ class design4 extends StatelessWidget {
                                 ),
                               ),
                             ),
-                          ), //SignIN Button
+                          ),
                         ],
                       ),
                     ),
             ),
           Container(
             width: screenWidth,
-              padding: EdgeInsets.symmetric(horizontal: 50,vertical: 50),
+              padding: EdgeInsets.symmetric(horizontal: 50,vertical: 10),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -175,15 +175,15 @@ class design4 extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Padding(
-                  padding: EdgeInsets.all(8.0),
+                  padding: EdgeInsets.symmetric(horizontal: 10),
                   child: CircleAvatar(
-                    backgroundImage: AssetImage('assets/Icon/F.png'),
-                      radius: 25,
+                    backgroundImage: AssetImage('assets/Icon/facebook.png'),
+                      radius: 20,
                   ),
                 ),
                 CircleAvatar(
-                  backgroundImage: AssetImage('assets/Icon/I.png'),
-                  radius: 25,
+                  backgroundImage: AssetImage('assets/Icon/instagram.png'),
+                  radius: 20,
                 ),
               ],
             ),
