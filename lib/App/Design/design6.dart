@@ -1,55 +1,128 @@
 import 'package:flutter/material.dart';
+import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class design6 extends StatelessWidget {
-  const design6({Key? key}) : super(key: key);
+   design6({Key? key}) : super(key: key);
 
   static const String _title = 'PageView Simple Sample';
+  final controller = PageController();
+  final dataString = '''One Stop Digital Solutions
+  Provider''';
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('PageView Simple Sample'),
-      ),
       body: Container(
-        child: PageView(
-          scrollDirection: Axis.horizontal,
-          children: <Widget>[
-            Container(
-              color: Colors.green,
-              child: const Text(
-                'Page One',
-                style: TextStyle(
-                  fontFamily: 'Allison',
-                  fontSize: 60,
-                  fontWeight: FontWeight.bold,
-                ),
+        color: Colors.white,
+        child: Column(
+          children: [
+            SizedBox(
+              height: 600,
+              child: PageView(
+                controller: controller,
+                scrollDirection: Axis.horizontal,
+                children: <Widget>[
+                  Container(
+                    color: Colors.white,
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Container(
+                          height: 500,
+                          width: 350,
+                          decoration: BoxDecoration(
+                            image: DecorationImage(
+                              image: AssetImage(
+                                  'assets/Image/slide1.jpg'),
+                              fit: BoxFit.contain,
+                            ),
+                            /*shape: BoxShape.circle,*/
+                          ),
+                        ),
+                        Text(dataString,
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontSize: 20,
+                          color: Colors.black,
+                        ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Container(
+                    color: Colors.white,
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Container(
+                          height: 500,
+                          width: 350,
+                          decoration: BoxDecoration(
+                            image: DecorationImage(
+                              image: AssetImage(
+                                  'assets/Image/slide2.jpg'),
+                              fit: BoxFit.contain,
+                            ),
+                            /*shape: BoxShape.circle,*/
+                          ),
+                        ),
+                        Text(dataString,
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            fontSize: 20,
+                            color: Colors.black,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Container(
+                    color: Colors.white,
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        Container(
+                          height: 500,
+                          width: 350,
+                          decoration: BoxDecoration(
+                            image: DecorationImage(
+                              image: AssetImage(
+                                  'assets/Image/slide3.jpg'),
+                              fit: BoxFit.contain,
+                            ),
+                            /*shape: BoxShape.circle,*/
+                          ),
+                        ),
+                        Text(dataString,
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            fontSize: 20,
+                            color: Colors.black,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
               ),
             ),
-            Container(
-              color: Colors.yellow,
-              child: const Text(
-                'Page Two',
-                style: TextStyle(
-                  fontFamily: 'Allison',
-                  fontSize: 60,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-            ),
-            Container(
-              color: Colors.deepPurple,
-              child: const Text(
-                'Page Three',
-                style: TextStyle(
-                  fontFamily: 'Allison',
-                  fontSize: 60,
-                  fontWeight: FontWeight.bold,
-                ),
+            SmoothPageIndicator(
+              controller: controller,
+              count: 3,
+              effect: SlideEffect(
+                radius: 8.0,
+                dotWidth: 8.0,
+                dotHeight: 8.0,
+                dotColor: Colors.grey,
+                activeDotColor: Colors.green,
               ),
             ),
           ],
         ),
+
       ),
     );
   }
