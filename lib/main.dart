@@ -21,7 +21,7 @@ class learn extends StatelessWidget {
       theme: ThemeData(
         primaryColor: Colors.lightBlue[800],
       ),
-      home: design6(),
+      home: design5(),
     );
   }
 }

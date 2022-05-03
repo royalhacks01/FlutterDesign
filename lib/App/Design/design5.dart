@@ -1,8 +1,34 @@
+import 'dart:async';
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:learn/App/Design/design6.dart';
 
-class design5 extends StatelessWidget {
+class design5 extends StatefulWidget {
    design5({Key? key}) : super(key: key);
+
+  @override
+  State<design5> createState() => _design5State();
+}
+
+  class _design5State extends State<design5> {
+
+  @override
+  void initState() {
+    super.initState();
+    //_navigatetohome();
+    Timer(
+      Duration(
+        seconds: 3,
+      ), () {Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>design6()));}
+    );
+  }
+
+  /*_navigatetohome()async{
+    await Future.delayed(Duration(milliseconds: 1500), () {} );
+    Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>design6()));
+  }*/
+
 
   @override
   Widget build(BuildContext context) {

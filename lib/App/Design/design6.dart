@@ -9,8 +9,6 @@ class design6 extends StatelessWidget {
   final dataString = '''One Stop Digital Solutions
   Provider''';
 
-
-
   @override
   Widget build(BuildContext context) {
     final screenHeight = MediaQuery.of(context).size.height;
