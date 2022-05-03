@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class design5 extends StatelessWidget {
@@ -25,19 +26,27 @@ class design5 extends StatelessWidget {
         ),
       child: Column(
         children: [
-          Container(
-            height: screenHeight / 1.1 ,
-            width: screenWidth / 1.6,
-            decoration: BoxDecoration(
-              image: DecorationImage(
-                image: AssetImage(
-                    'assets/Logo/logo.png'),
-                fit: BoxFit.contain,
+          Expanded(
+            child: Container(
+              child: Padding(
+                padding: EdgeInsets.symmetric(horizontal: 60,vertical: 50),
+                child: Container(
+                  width: screenWidth,
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                      image: AssetImage(
+                          'assets/Logo/logo.png'),
+                      fit: BoxFit.contain,
+                    ),
+                    shape: BoxShape.circle,
+                  ),
+                ),
               ),
-              shape: BoxShape.circle,
-            ),
+            )
           ),
           Container(
+            height: screenHeight / 5,
+            width: screenWidth,
             child: Column(
               children: [
                 Padding(
@@ -46,6 +55,7 @@ class design5 extends StatelessWidget {
                          style: TextStyle(
                            fontSize: 30,
                            color: Colors.white,
+                           fontWeight: FontWeight.w400,
                    ),
                   ),
                 ),
