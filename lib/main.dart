@@ -5,6 +5,7 @@ import 'package:learn/App/Design/design5.dart';
 import 'package:learn/App/Design/design2.dart';
 import 'package:learn/App/Design/design1.dart';
 import 'package:learn/App/Design/design6.dart';
+import 'package:learn/App/Design/design7.dart';
 
 void main(){
   runApp(learn());
@@ -21,7 +22,7 @@ class learn extends StatelessWidget {
       theme: ThemeData(
         primaryColor: Colors.lightBlue[800],
       ),
-      home: design5(),
+      home: design7(),
     );
   }
 }
