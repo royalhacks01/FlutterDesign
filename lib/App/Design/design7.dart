@@ -72,10 +72,8 @@ class design7 extends StatelessWidget {
               height: 280,
               width: 310,
               decoration: BoxDecoration(
-                  border: Border.all(
-                    color: Colors.grey,
-                  ),
-                  borderRadius: BorderRadius.all(Radius.circular(20))
+                  borderRadius: BorderRadius.all(Radius.circular(20),),
+                color: Colors.white,
               ),
               child: Column(
                 children: [
@@ -240,10 +238,11 @@ class design7 extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                    padding: EdgeInsets.only(top: 14, left: 240),
+                    padding: EdgeInsets.only(top: 14, left: 212),
                     child: Text('View All >>',
                     style: TextStyle(
-                      fontSize: 12,
+                      color: Colors.green,
+                      fontSize: 14,
                       fontWeight: FontWeight.bold,
                     ),
                     ),
