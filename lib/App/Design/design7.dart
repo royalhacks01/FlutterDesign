@@ -59,7 +59,7 @@ class design7 extends StatelessWidget {
             ),
 
             Padding(
-              padding: EdgeInsets.only(top: 10, right: 170),
+              padding: EdgeInsets.only(top: 10, right: 170, bottom: 20),
               child: Text('Popular Features',
               style: TextStyle(
                 fontSize: 20,
@@ -69,15 +69,26 @@ class design7 extends StatelessWidget {
               ),
             ),
             Container(
+              height: 280,
+              width: 310,
+              decoration: BoxDecoration(
+                  border: Border.all(
+                    color: Colors.grey,
+                  ),
+                  borderRadius: BorderRadius.all(Radius.circular(20))
+              ),
               child: Column(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.only(top: 30),
+                    padding: EdgeInsets.only(top: 30),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
                         Container(
-                          color: Color(0xFFE7F6FF),
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.all(Radius.circular(10)),
+                              color: Color(0xFFE7F6FF),
+                          ),
                           height: 80,
                           width: 80,
                           child: Column(
@@ -98,7 +109,10 @@ class design7 extends StatelessWidget {
                           ),
                         ),
                         Container(
-                          color: Color(0xFFE7F6FF),
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.all(Radius.circular(10)),
+                            color: Color(0xFFE7F6FF),
+                          ),
                           height: 80,
                           width: 80,
                           child: Column(
@@ -119,7 +133,10 @@ class design7 extends StatelessWidget {
                           ),
                         ),
                         Container(
-                          color: Color(0xFFE7F6FF),
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.all(Radius.circular(10)),
+                            color: Color(0xFFE7F6FF),
+                          ),
                           height: 80,
                           width: 80,
                           child: Column(
@@ -141,7 +158,96 @@ class design7 extends StatelessWidget {
                         ),
                       ],
                     ),
-                  )
+                  ),
+                  Padding(
+                    padding: EdgeInsets.only(top: 30),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.all(Radius.circular(10)),
+                            color: Color(0xFFE7F6FF),
+                          ),
+                          height: 80,
+                          width: 80,
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Icon(
+                                Icons.call,
+                                color: Colors.green,
+                                size: 30.0,
+                              ),
+                              Text('Voice',
+                                style: TextStyle(
+                                  fontSize: 13,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.all(Radius.circular(10)),
+                            color: Color(0xFFE7F6FF),
+                          ),
+                          height: 80,
+                          width: 80,
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Icon(
+                                Icons.wifi,
+                                color: Colors.green,
+                                size: 30.0,
+                              ),
+                              Text('Internet',
+                                style: TextStyle(
+                                  fontSize: 13,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Container(
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.all(Radius.circular(10)),
+                            color: Color(0xFFE7F6FF),
+                          ),
+                          height: 80,
+                          width: 80,
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Icon(
+                                Icons.security,
+                                color: Colors.green,
+                                size: 30.0,
+                              ),
+                              Text('Security',
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 13,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.only(top: 14, left: 240),
+                    child: Text('View All >>',
+                    style: TextStyle(
+                      fontSize: 12,
+                      fontWeight: FontWeight.bold,
+                    ),
+                    ),
+                  ),
                 ],
               ),
             ),
