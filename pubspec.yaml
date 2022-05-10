@@ -66,6 +66,9 @@ flutter:
     - assets/Icon/facebook.png
     - assets/Icon/instagram.png
     - assets/Icon/logo.png
+    - assets/Icon/microsoft.svg
+    - assets/Icon/aws.png
+    - assets/Icon/azure.png
     - assets/Logo/logo.png
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
